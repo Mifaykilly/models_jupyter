@@ -4,7 +4,6 @@ Jupyter Notebook'da bir veri seti kullanarak 3 farklı model eğitimi.
 Önce _Bayesian Optimization_ ile ve veri üzerinde herhnagi bir değişiklik yapmadan bir tahminde bulunduruldu. Daha sonra veri seti normalize edildi ve tekrar _Bayesian Optimization_ kullanarak tahmin yaptırıldı. En son olarak ise normalize edilmiş veri için _Gridsearch_ kullanarak tahmin yaptırıldı.
 # *Detaylı Açıklama*
 **1. hücre açıklaması**: kütüphanelerin içe aktarılması yapıldı.
-
 **2. hücre açıklaması**: _diabetes.csv_ isimli veri dosyası _pandas_ kütüphanesi yardımıyla okundu, ilk birkaç satır doğrulama amacıyla görüntülendi.
 **3. hücre açıklaması**: sadece feature değerlerini kullanmak ve tahmin edilecek olan sonucu çıkarmak için _drop_ metodu kullanıldı.
 **4. hücre açıklaması**: _skopt_ paketinden _BayesSearchCV_ metoduyla parametreler rasgele belirlendi.
