@@ -1,4 +1,17 @@
 # *Özet*
-Bir veri seti kullanarak 3 farklı model eğitimi.
+Jupyter Notebook'da bir veri seti kullanarak 3 farklı model eğitimi.
 # *Akış*
 Önce _Bayesian Optimization_ ile ve veri üzerinde herhnagi bir değişiklik yapmadan bir tahminde bulunduruldu. Daha sonra veri seti normalize edildi ve tekrar _Bayesian Optimization_ kullanarak tahmin yaptırıldı. En son olarak ise normalize edilmiş veri için _Gridsearch_ kullanarak tahmin yaptırıldı.
+# *Detaylı Açıklama*
+**1. hücre açıklaması**: kütüphanelerin içe aktarılması yapıldı.
+**2. hücre açıklaması**: _diabetes.csv_ isimli veri dosyası _pandas_ kütüphanesi yardımıyla okundu, ilk birkaç satır doğrulama amacıyla görüntülendi.
+**3. hücre açıklaması**: sadece feature değerlerini kullanmak ve tahmin edilecek olan sonucu çıkarmak için _drop_ metodu kullanıldı.
+**4. hücre açıklaması**: _skopt_ paketinden _BayesSearchCV_ metoduyla parametreler rasgele belirlendi.
+**5. hücre açıklaması**: _BayesSearchCV_ kütüphanesinden _fit_ metoduyla en iyi parametreler belirlendi ve görüntülendi.
+**6. hücre açıklaması**: En iyi parametreler SVC olarak görüntülendi.
+**7. hücre açıklaması**: _BayesSearchCV_ kütüphanesinden _predict_ metoduyla tahmin yapıldı ve _sklearn.metrics_ kütüphanesinden _accuracy_score_ ve _confusion_matrix_ metotlarıyla accuracy ve confusion matrix görüntülendi.
+**8. hücre açıklaması**: _pandas_ kütüphanesinden _DataFrame_ metoduyla tahmin edilen değerlerin gerçek ve tahmin değerlerini karşılaştıran bir tablo görüntülendi.
+**9. hücre açıklaması**: _sklearn.preprocessing_ paketinden _MinMaxScaler_ ve _fit_transform_ metotlarıyla veri normalize edildi.
+**10. hücre açıklaması**: normalize edilmiş veri tabloya çevrilip tablo halinde görüntülendi.
+**11-15. hücre açıklaması**: 3-7. hücreler arası yapılan işlemler, SVC ile parametre görüntüleme dışında, tekrarlandı ve accuracy ve confusion matrix görüntülendi, ardından gerçek ve tahmin değerlerini karşılaştıran tablo görüntülendi.
+**16. hücre açıklaması**: sadece feature değerlerini kullanmak ve tahmin edilecek olan sonucu çıkarmak için _drop_ metodu kullanıldı. 
