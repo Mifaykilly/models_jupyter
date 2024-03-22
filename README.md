@@ -13,7 +13,11 @@ Jupyter Notebook'da bir veri seti kullanarak 3 farklı model eğitimi.
 **8. hücre açıklaması**: _pandas_ kütüphanesinden _DataFrame_ metoduyla tahmin edilen değerlerin gerçek ve tahmin değerlerini karşılaştıran bir tablo görüntülendi.
 **9. hücre açıklaması**: _sklearn.preprocessing_ paketinden _MinMaxScaler_ ve _fit_transform_ metotlarıyla veri normalize edildi.
 **10. hücre açıklaması**: normalize edilmiş veri tabloya çevrilip tablo halinde görüntülendi.
-**11-15. hücre açıklaması**: 3-7. hücreler arası yapılan işlemler, SVC ile parametre görüntüleme dışında, tekrarlandı ve accuracy ve confusion matrix görüntülendi, ardından gerçek ve tahmin değerlerini karşılaştıran tablo görüntülendi.
+**11 hücre açıklaması**: sadece feature değerlerini kullanmak ve tahmin edilecek olan sonucu çıkarmak için _drop_ metodu kullanıldı.
+**12. hücre açıklaması**:veri seti _train_test_split_ metodu kullanılarak train ve test gruplarına ayrıldı.
+**13. hücre açıklaması**: __GaussianNB_ kütüphanesinden _fit_ ve _predict_ metotları kullanılarak en iyi parametreler belirlendi ve bu parametrelerle tahmin yapıldı.
+**14. hücre açıklaması**: _sklearn.metrics_ kütüphanesinden _accuracy_score_ ve _confusion_matrix_ metotlarıyla accuracy ve confusion matrix görüntülendi.
+**15. hücre açıklaması**: _pandas_ kütüphanesinden _DataFrame_ metoduyla tahmin edilen değerlerin gerçek ve tahmin değerlerini karşılaştıran tablo görüntülendi.
 **16. hücre açıklaması**: sadece feature değerlerini kullanmak ve tahmin edilecek olan sonucu çıkarmak için _drop_ metodu kullanıldı. 
 **17. hücre açıklaması**: veri seti _train_test_split_ metodu kullanılarak train ve test gruplarına ayrıldı.
 **18. hücre açıklaması**: _GridSearchCV_ kütüphanesinden _param_grid_ attribute ile parametreler rasgele belirlendi.
